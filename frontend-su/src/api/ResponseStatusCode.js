@@ -1,0 +1,30 @@
+export const LOGIN_SUCCESS = 2100;
+export const READ_USER = 2200;
+export const READ_USERS = 2210;
+
+export const CREATED_USER = 2300;
+export const UPDATE_USER = 2400;
+export const DELETE_USER = 2500;
+export const LOGOUT_USER = 2600;
+
+export const LOGIN_CHECK_SUCCESS_USER = 2700;
+export const LOGIN_CHECK_FAIL_USER = 2800;
+
+export const LOGIN_FAIL_NOT_FOUND_USER = 5000;
+export const LOGIN_FAIL_PASSWORD_MISMATCH_USER = 5100;
+export const UPDATE_FAIL_PASSWORD_MISMATCH_USER = 5110;
+
+export const CREATE_FAIL_EXISTED_USER = 5200;
+export const UNAUTHORIZED_USER = 5400;
+export const ERROR_ACCESSDENIED = 5500;
+export const ERROR_ACCESS_TOKEN = 5600;
+export const CUSTOM_JWT_ERROR = 5700;
+export const ERROR_NOT_FOUND_ACCESS_TOKEN = 5800;
+export const ERROR_EXPIRED_TOKEN = 5900;
+
+
+export const SPRING_SECURITY_NO_SEARCH_ELEMENT = 9000;
+export const SPRING_METHOD_ARGUMENT_NOT_VALID = 9001;
+export const UNKNOWN_EXCEPTION = 9999;
+
+

@@ -1,0 +1,43 @@
+[
+  {
+    "orderId": "123e4567-e89b-12d3-a456-426614174000",
+    "cartItems": [
+      {
+        "cartItemId": "item1",
+        "name": "Modern Sofa",
+        "price": 500,
+        "discount": 10,
+        "quantity": 1
+      },
+      {
+        "cartItemId": "item2",
+        "name": "Wooden Coffee Table",
+        "price": 150,
+        "discount": 0,
+        "quantity": 2
+      }
+    ],
+    "currency": {
+      "currencySymbol": "$",
+      "currencyRate": 1
+    },
+    "createdAt": "2025-12-25T12:00:00.000Z"
+  },
+  {
+    "orderId": "223e4567-e89b-12d3-a456-426614174001",
+    "cartItems": [
+      {
+        "cartItemId": "item3",
+        "name": "Dining Chair",
+        "price": 75,
+        "discount": 5,
+        "quantity": 4
+      }
+    ],
+    "currency": {
+      "currencySymbol": "$",
+      "currencyRate": 1
+    },
+    "createdAt": "2025-12-25T13:00:00.000Z"
+  }
+]

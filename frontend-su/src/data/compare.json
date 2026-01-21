@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Chair",
+    "price": 120,
+    "discount": 20,
+    "stock": 10,
+    "rating": 4,
+    "image": ["/images/product/compare/product-1.jpg"],
+    "shortDescription": "A comfortable basic chair for everyday use.",
+    "affiliateLink": "",
+    "variation": []
+  },
+  {
+    "id": 2,
+    "name": "Modern Sofa",
+    "price": 450,
+    "discount": 50,
+    "stock": 5,
+    "rating": 5,
+    "image": ["/images/product/compare/product-2.jpg"],
+    "shortDescription": "A sleek modern sofa that fits any living room.",
+    "affiliateLink": "",
+    "variation": []
+  },
+  {
+    "id": 3,
+    "name": "Wooden Table",
+    "price": 300,
+    "discount": 0,
+    "stock": 7,
+    "rating": 3,
+    "image": ["/images/product/compare/product-3.jpg"],
+    "shortDescription": "A sturdy wooden table made from premium oak.",
+    "affiliateLink": "",
+    "variation": []
+  }
+]

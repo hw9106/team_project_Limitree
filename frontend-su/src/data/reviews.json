@@ -1,0 +1,29 @@
+[
+  {
+    "reviewId": 1,
+    "productId": "1",
+    "userId": "hong123",
+    "userName": "홍길동",
+    "rating": 5,
+    "content": "디자인이 정말 예쁘고 마감도 좋아요. 집 분위기가 확 살아납니다.",
+    "createdAt": "2024-12-01"
+  },
+  {
+    "reviewId": 2,
+    "productId": "1",
+    "userId": "kim99",
+    "userName": "김철수",
+    "rating": 4,
+    "content": "생각보다 튼튼하고 배송도 빨랐어요. 다만 조립이 살짝 어려웠습니다.",
+    "createdAt": "2024-12-03"
+  },
+  {
+    "reviewId": 3,
+    "productId": "1",
+    "userId": "lee77",
+    "userName": "이영희",
+    "rating": 5,
+    "content": "사진보다 실물이 훨씬 좋아요. 재구매 의사 있습니다!",
+    "createdAt": "2024-12-05"
+  }
+]

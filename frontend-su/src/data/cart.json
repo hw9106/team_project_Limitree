@@ -1,0 +1,106 @@
+[
+  {
+    "cartItemId": "14c113e7-3742-42b5-8168-2b5411c7aa2d",
+    "id": "1",
+    "name": "임시로 넣는 파일",
+    "price": 12.45,
+    "discount": 10,
+    "quantity": 3,
+    "rating": 4,
+    "saleCount": 54,
+    "sku": "asdf123",
+    "new": false,
+    "offerEnd": "October 5, 2024 12:11:00",
+
+    "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+
+    "category": ["fashion", "men"],
+    "tag": ["fashion", "men", "jacket", "full sleeve"],
+
+    "image": [
+      "/assets/img/product/fashion/1.jpg",
+      "/assets/img/product/fashion/3.jpg",
+      "/assets/img/product/fashion/6.jpg",
+      "/assets/img/product/fashion/8.jpg",
+      "/assets/img/product/fashion/9.jpg"
+    ],
+
+    "selectedProductColor": "white",
+    "selectedProductSize": "x",
+
+    "variation": [
+  {
+    "color": "white",
+    "image": "/assets/img/product/fashion/1.jpg",
+    "size": [
+      { "name": "x", "stock": 10 },
+      { "name": "m", "stock": 5 },
+      { "name": "l", "stock": 3 }
+    ]
+  },
+  {
+    "color": "black",
+    "image": "/assets/img/product/fashion/8.jpg",
+    "size": [
+      { "name": "s", "stock": 4 },
+      { "name": "m", "stock": 6 },
+      { "name": "l", "stock": 2 },
+      { "name": "xl", "stock": 1 }
+    ]
+  }
+]
+  },
+  {
+    "cartItemId": "14c113e7-3742-42b5-8168-1b5411c7aa2d",
+    "id": "2",
+    "name": "임시로 넣는 파일",
+    "price": 12.45,
+    "discount": 10,
+    "quantity": 3,
+    "rating": 4,
+    "saleCount": 54,
+    "sku": "asdf123",
+    "new": false,
+    "offerEnd": "October 5, 2024 12:11:00",
+
+    "shortDescription": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    "fullDescription": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+
+    "category": ["fashion", "men"],
+    "tag": ["fashion", "men", "jacket", "full sleeve"],
+
+    "image": [
+      "/assets/img/product/fashion/1.jpg",
+      "/assets/img/product/fashion/3.jpg",
+      "/assets/img/product/fashion/6.jpg",
+      "/assets/img/product/fashion/8.jpg",
+      "/assets/img/product/fashion/9.jpg"
+    ],
+
+    "selectedProductColor": "white",
+    "selectedProductSize": "x",
+
+    "variation": [
+  {
+    "color": "white",
+    "image": "/assets/img/product/fashion/1.jpg",
+    "size": [
+      { "name": "x", "stock": 10 },
+      { "name": "m", "stock": 5 },
+      { "name": "l", "stock": 3 }
+    ]
+  },
+  {
+    "color": "black",
+    "image": "/assets/img/product/fashion/8.jpg",
+    "size": [
+      { "name": "s", "stock": 4 },
+      { "name": "m", "stock": 6 },
+      { "name": "l", "stock": 2 },
+      { "name": "xl", "stock": 1 }
+    ]
+  }
+]
+  }
+]

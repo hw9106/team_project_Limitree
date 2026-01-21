@@ -1,0 +1,32 @@
+[
+  {
+    "id": 101,
+    "name": "LIMITREE Oak Chair",
+    "price": 180,
+    "discount": 10,
+    "stock": 12,
+    "image": ["/assets/img/product/chair-1.jpg"],
+    "variation": [],
+    "affiliateLink": null
+  },
+  {
+    "id": 102,
+    "name": "LIMITREE Modern Table",
+    "price": 420,
+    "discount": 0,
+    "stock": 5,
+    "image": ["/assets/img/product/table-1.jpg"],
+    "variation": [],
+    "affiliateLink": null
+  },
+  {
+    "id": 103,
+    "name": "LIMITREE Fabric Sofa",
+    "price": 980,
+    "discount": 15,
+    "stock": 0,
+    "image": ["/assets/img/product/sofa-1.jpg"],
+    "variation": [],
+    "affiliateLink": null
+  }
+]

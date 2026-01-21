@@ -1,0 +1,10 @@
+{
+  "status": 2100,
+  "message": "회원 로그인 성공",
+  "data": {
+    "userId": "guard1",
+    "password": "1111",
+    "name": "guard1",
+    "email": "string"
+  }
+}
