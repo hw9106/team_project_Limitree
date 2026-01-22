@@ -149,31 +149,48 @@ Limitree (팀 프로젝트)
 - 상품 목록/상세 조회, 정렬/필터 UX 연동
 - 관리자 상품 관리(도메인 분리)
 
+<img width="1020" height="1467" alt="제품" src="https://github.com/user-attachments/assets/477db911-da10-4693-bcc9-5d14fa2da921" /> <img width="996" height="1421" alt="제품 2" src="https://github.com/user-attachments/assets/34975af9-54cc-4c2a-8ae4-a149dbb7d752" /> <img width="1022" height="1400" alt="제품 3" src="https://github.com/user-attachments/assets/682c8d7d-4252-41f4-8718-79c95f6c4536" />
+
 ### 2) 카테고리(Category)
 - 카테고리 트리 제공 → 네비게이션/필터에 바로 사용
+
+<img width="1039" height="542" alt="카테고리 1" src="https://github.com/user-attachments/assets/633e7d28-2869-4548-b1ca-178534a40512" /> <img width="1008" height="1414" alt="카테고리 2" src="https://github.com/user-attachments/assets/dc6cc66d-b019-4750-81c1-7e7fee41f68f" />
 
 ### 3) 장바구니(Cart)
 - 장바구니 담기/수량 변경/삭제
 - 사용자별 장바구니 관리
 
+<img width="1012" height="920" alt="카트 1번" src="https://github.com/user-attachments/assets/57fdcb4b-b2c4-45b4-99a9-2ae86d216dc4" /><img width="970" height="862" alt="카트 2번" src="https://github.com/user-attachments/assets/792dfc9d-eeee-453b-a6f4-7b0a7a877168" />
+
 ### 4) 주문(Order)
 - 주문 생성/조회 (주문-주문아이템 구조 기반)
 - 주문 완료 화면 UX(새로고침 데이터 유지 등) 고려
 
+<img width="971" height="642" alt="주문 1번" src="https://github.com/user-attachments/assets/d7f3583a-b74c-4e15-8fd2-f913025deebb" /> <img width="603" height="491" alt="주문 2번" src="https://github.com/user-attachments/assets/519750a8-305e-4795-a4bd-566f0c8b5c36" />
+
 ### 5) 리뷰(Review)
 - 리뷰 조회/작성(UGC), 관리자 삭제/관리 분리
+
+<img width="960" height="1158" alt="리뷰 1번" src="https://github.com/user-attachments/assets/c5d4a3f0-5c35-470e-be7c-e204b91aa515" /><img width="972" height="489" alt="리뷰 2번" src="https://github.com/user-attachments/assets/7aad97d1-b9b4-4f20-afc5-cbda4742a353" />
 
 ### 6) 회원(User / Auth)
 - 일반 로그인 + 소셜 로그인(카카오 엔드포인트 분리)
 - 토큰 인증 기반 보호(만료 대응 포함)
 
+<img width="566" height="497" alt="로그인" src="https://github.com/user-attachments/assets/85540f60-d7f4-4d6d-b666-282a23a27766" /><img width="567" height="676" alt="회원가입" src="https://github.com/user-attachments/assets/7534e980-2f07-4e67-8606-e02f5a538c11" />
+<img width="724" height="723" alt="내정보 1" src="https://github.com/user-attachments/assets/ec4ddc02-c226-4b30-a0aa-00a1903afe4b" /><img width="723" height="677" alt="내정보 2" src="https://github.com/user-attachments/assets/8b09d579-c5b1-4ea6-a0b0-48bf73cee6de" /><img width="713" height="938" alt="내정보 3" src="https://github.com/user-attachments/assets/424cfdf6-ea79-4723-b1d2-21a716fbfb50" />
+
 ### 7) 위시리스트(Wishlist)
 - 관심 상품 저장/조회/삭제
 - 중복 저장 이슈 방지(프론트-백 계약 중요)
 
+<img width="960" height="636" alt="위시리스트" src="https://github.com/user-attachments/assets/cc8d3bb8-3275-4d61-99d0-2fb3c034937c" />
+
 ### 8) 비교(Compare)
 - 비교 목록 관리
 - 중복 체크/카운트 제공 → UI 배지/카운트에 활용
+
+<img width="957" height="693" alt="비교" src="https://github.com/user-attachments/assets/fbf0d61a-bb1f-4adc-b17c-aa608bf86b4b" />
 
 ---
 
