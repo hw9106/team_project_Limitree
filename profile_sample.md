@@ -1,5 +1,5 @@
 # 🛍️ Limitree (팀 프로젝트)
----
+
 ## 🧾 팀원 소개
 #### 💡팀명: LIMITREE
 #### 💡프로젝트명: 온라인 가구 쇼핑 플랫폼
@@ -43,21 +43,6 @@
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-6DB33F?logo=springboot&logoColor=white)
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-DB-F80000?logo=oracle&logoColor=white)
-
----
-
-## 📌 목차
-- [프로젝트 소개](#-프로젝트-소개)
-- [핵심 가치](#-핵심-가치)
-- [✨ 주요 기능](#-주요-기능)
-- [🧰 기술 스택](#-기술-스택)
-- [🏗️ 시스템 아키텍처](#-시스템-아키텍처)
-- [🧩 도메인 설계](#-도메인-설계)
-- [📚 API 문서](#-api-문서)
-- [🚀 실행 방법](#-실행-방법)
-- [📁 폴더 구조](#-폴더-구조)
-- [🧯 트러블슈팅 & 해결](#-트러블슈팅--해결)
-- [🔭 향후 개선](#-향후-개선)
 
 ---
 
