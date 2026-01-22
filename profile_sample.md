@@ -149,7 +149,7 @@ Limitree (팀 프로젝트)
 - 상품 목록/상세 조회, 정렬/필터 UX 연동
 - 관리자 상품 관리(도메인 분리)
 
-<img width="100"  alt="제품" src="https://github.com/user-attachments/assets/477db911-da10-4693-bcc9-5d14fa2da921" /> <img width="100" alt="제품 2" src="https://github.com/user-attachments/assets/34975af9-54cc-4c2a-8ae4-a149dbb7d752" /> <img width="100" alt="제품 3" src="https://github.com/user-attachments/assets/682c8d7d-4252-41f4-8718-79c95f6c4536" />
+<img width="200"  alt="제품" src="https://github.com/user-attachments/assets/477db911-da10-4693-bcc9-5d14fa2da921" /> <img width="200" alt="제품 2" src="https://github.com/user-attachments/assets/34975af9-54cc-4c2a-8ae4-a149dbb7d752" /> <img width="200" alt="제품 3" src="https://github.com/user-attachments/assets/682c8d7d-4252-41f4-8718-79c95f6c4536" />
 
 ### 2) 카테고리(Category)
 - 카테고리 트리 제공 → 네비게이션/필터에 바로 사용
