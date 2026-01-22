@@ -7,7 +7,7 @@
 
 ---
 
-> React + Spring Boot 기반 쇼핑몰 프로젝트 — 기능을 **도메인(카테고리) 단위로 분리**해 구현했습니다.
+> React + Spring Boot 기반 쇼핑몰 프로젝트 — 기능을 **도메인(카테고리) 단위로 분리**
 
 ![Java](https://img.shields.io/badge/Java-21-007396?logo=java&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-6DB33F?logo=springboot&logoColor=white)
