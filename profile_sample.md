@@ -120,6 +120,8 @@ Limitree (팀 프로젝트)
 ## CI/CD & Infra
 
 ### 🔹 CI/CD Pipeline (GitHub Actions)
+> **Push → Test → Build → Docker Image → Registry Push → Deploy**  
+> 변경사항이 GitHub에 Push 되면 Actions가 자동으로 실행되어 빌드/테스트 후 이미지 배포까지 자동화합니다.
 
 | Category | Tech | Usage | Badge |
 |---|---|---|---|
