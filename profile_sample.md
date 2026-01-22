@@ -253,7 +253,5 @@ team_project_Limitree/
 https://github.com/user-attachments/assets/a095d075-e0a3-43f2-9e69-42faf59850e7
 
 ## LIMITREE 프레젠테이션
-
-[_260122.LIMITREE._REV1.pdf](https://github.com/user-attachments/files/24790138/_260122.LIMITREE._REV1.pdf)
-
+- [발표자료 보기](./docs/_260122.LIMITREE._REV1.pdf)
 
