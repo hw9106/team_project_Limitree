@@ -117,7 +117,7 @@ Limitree (팀 프로젝트)
 
 ---
 
-## 🚀 CI/CD & Infra
+## CI/CD & Infra
 
 ### 🔹 CI/CD Pipeline (GitHub Actions)
 > **Push → Test → Build → Docker Image → Registry Push → Deploy**  
