@@ -179,26 +179,7 @@ team_project_Limitree/
 ```
 ---
 ## Advanced CI/CD Pipeline
-
-```mermaid
-flowchart TB
-    Dev[Developer] --> Git[GitHub]
-
-    Git --> CI[CI Pipeline<br/>GitHub Actions]
-
-    CI --> Test[Unit Test<br/>JUnit / Jest]
-    Test --> Build[Build<br/>Gradle / npm]
-
-    Build --> Image[Docker Image Build]
-    Image --> Scan[Security Scan]
-
-    Scan --> Registry[Docker Registry]
-
-    Registry --> CD[CD Pipeline]
-    CD --> Deploy[Deploy<br/>Nginx / Docker Compose]
-
-    Deploy --> Service[Application Service]
-    Service --> DB[(Oracle DB)]
+![Uploading ChatGPT Image 2026년 1월 22일 오후 03_04_02.png…]()
 
 ### Pipeline Description
 1. 개발자가 기능 구현 후 GitHub에 Push
