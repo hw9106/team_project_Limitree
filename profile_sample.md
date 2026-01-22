@@ -1,4 +1,4 @@
-# Limitree (팀 프로젝트)
+# <img width="123" height="38" alt="logo" src="https://github.com/user-attachments/assets/af863b77-e603-4838-a6b2-cb76f028a03d" />(팀 프로젝트)
 
 ## 팀원 소개
 #### 팀명: LIMITREE
