@@ -154,43 +154,43 @@ Limitree (팀 프로젝트)
 ### 2) 카테고리(Category)
 - 카테고리 트리 제공 → 네비게이션/필터에 바로 사용
 
-<img width="100" alt="카테고리 1" src="https://github.com/user-attachments/assets/633e7d28-2869-4548-b1ca-178534a40512" /> <img  width="100" alt="카테고리 2" src="https://github.com/user-attachments/assets/dc6cc66d-b019-4750-81c1-7e7fee41f68f" />
+<img width="200" alt="카테고리 1" src="https://github.com/user-attachments/assets/633e7d28-2869-4548-b1ca-178534a40512" /> <img  width="200" alt="카테고리 2" src="https://github.com/user-attachments/assets/dc6cc66d-b019-4750-81c1-7e7fee41f68f" />
 
 ### 3) 장바구니(Cart)
 - 장바구니 담기/수량 변경/삭제
 - 사용자별 장바구니 관리
 
-<img  width="100" alt="카트 1번" src="https://github.com/user-attachments/assets/57fdcb4b-b2c4-45b4-99a9-2ae86d216dc4" /><img  width="100" alt="카트 2번" src="https://github.com/user-attachments/assets/792dfc9d-eeee-453b-a6f4-7b0a7a877168" />
+<img  width="200" alt="카트 1번" src="https://github.com/user-attachments/assets/57fdcb4b-b2c4-45b4-99a9-2ae86d216dc4" /><img  width="200" alt="카트 2번" src="https://github.com/user-attachments/assets/792dfc9d-eeee-453b-a6f4-7b0a7a877168" />
 
 ### 4) 주문(Order)
 - 주문 생성/조회 (주문-주문아이템 구조 기반)
 - 주문 완료 화면 UX(새로고침 데이터 유지 등) 고려
 
-<img  width="100" alt="주문 1번" src="https://github.com/user-attachments/assets/d7f3583a-b74c-4e15-8fd2-f913025deebb" /> <img  width="100" alt="주문 2번" src="https://github.com/user-attachments/assets/519750a8-305e-4795-a4bd-566f0c8b5c36" />
+<img  width="200" alt="주문 1번" src="https://github.com/user-attachments/assets/d7f3583a-b74c-4e15-8fd2-f913025deebb" /> <img  width="200" alt="주문 2번" src="https://github.com/user-attachments/assets/519750a8-305e-4795-a4bd-566f0c8b5c36" />
 
 ### 5) 리뷰(Review)
 - 리뷰 조회/작성(UGC), 관리자 삭제/관리 분리
 
-<img  width="100" alt="리뷰 1번" src="https://github.com/user-attachments/assets/c5d4a3f0-5c35-470e-be7c-e204b91aa515" /><img  width="100" alt="리뷰 2번" src="https://github.com/user-attachments/assets/7aad97d1-b9b4-4f20-afc5-cbda4742a353" />
+<img  width="200" alt="리뷰 1번" src="https://github.com/user-attachments/assets/c5d4a3f0-5c35-470e-be7c-e204b91aa515" /><img  width="200" alt="리뷰 2번" src="https://github.com/user-attachments/assets/7aad97d1-b9b4-4f20-afc5-cbda4742a353" />
 
 ### 6) 회원(User / Auth)
 - 일반 로그인 + 소셜 로그인(카카오 엔드포인트 분리)
 - 토큰 인증 기반 보호(만료 대응 포함)
 
-<img  width="100" alt="로그인" src="https://github.com/user-attachments/assets/85540f60-d7f4-4d6d-b666-282a23a27766" /><img  width="100" alt="회원가입" src="https://github.com/user-attachments/assets/7534e980-2f07-4e67-8606-e02f5a538c11" />
-<img  width="100" alt="내정보 1" src="https://github.com/user-attachments/assets/ec4ddc02-c226-4b30-a0aa-00a1903afe4b" /><img  width="100" alt="내정보 2" src="https://github.com/user-attachments/assets/8b09d579-c5b1-4ea6-a0b0-48bf73cee6de" /><img  width="100" alt="내정보 3" src="https://github.com/user-attachments/assets/424cfdf6-ea79-4723-b1d2-21a716fbfb50" />
+<img  width="200" alt="로그인" src="https://github.com/user-attachments/assets/85540f60-d7f4-4d6d-b666-282a23a27766" /><img  width="200" alt="회원가입" src="https://github.com/user-attachments/assets/7534e980-2f07-4e67-8606-e02f5a538c11" />
+<img  width="200" alt="내정보 1" src="https://github.com/user-attachments/assets/ec4ddc02-c226-4b30-a0aa-00a1903afe4b" /><img  width="200" alt="내정보 2" src="https://github.com/user-attachments/assets/8b09d579-c5b1-4ea6-a0b0-48bf73cee6de" /><img  width="200" alt="내정보 3" src="https://github.com/user-attachments/assets/424cfdf6-ea79-4723-b1d2-21a716fbfb50" />
 
 ### 7) 위시리스트(Wishlist)
 - 관심 상품 저장/조회/삭제
 - 중복 저장 이슈 방지(프론트-백 계약 중요)
 
-<img  width="100" alt="위시리스트" src="https://github.com/user-attachments/assets/cc8d3bb8-3275-4d61-99d0-2fb3c034937c" />
+<img  width="200" alt="위시리스트" src="https://github.com/user-attachments/assets/cc8d3bb8-3275-4d61-99d0-2fb3c034937c" />
 
 ### 8) 비교(Compare)
 - 비교 목록 관리
 - 중복 체크/카운트 제공 → UI 배지/카운트에 활용
 
-<img  width="100" alt="비교" src="https://github.com/user-attachments/assets/fbf0d61a-bb1f-4adc-b17c-aa608bf86b4b" />
+<img  width="200" alt="비교" src="https://github.com/user-attachments/assets/fbf0d61a-bb1f-4adc-b17c-aa608bf86b4b" />
 
 ---
 
