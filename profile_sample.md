@@ -147,6 +147,8 @@ team_project_Limitree/
   ├─ backend-su/          # Spring Boot (REST API)
   └─ frontend-su/         # React (UI/UX)
 ```
+### 📌 데이터베이스 (ERD)
+![image](https://github.com/user-attachments/assets/f16d790a-460d-4aec-bc43-4fdf53e6b071)
 
 ---
 
