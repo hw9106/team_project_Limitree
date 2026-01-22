@@ -33,7 +33,7 @@
 ## 프로젝트 설계
 Limitree (팀 프로젝트)
 1. 요구사항 명세서 
-<img width="836" height="175" alt="요구사항" src="https://github.com/user-attachments/assets/1bcbe91b-4f7c-4289-a2d5-1cafbd993c6b" />
+<img width="500"  alt="요구사항" src="https://github.com/user-attachments/assets/1bcbe91b-4f7c-4289-a2d5-1cafbd993c6b" />
 
 2. 화면 정의서 (Wireframe / 화면설계서)
 
