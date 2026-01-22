@@ -7,15 +7,6 @@
 
 ---
 
-> React + Spring Boot 기반 쇼핑몰 프로젝트 — 기능을 **도메인(카테고리) 단위로 분리**
-
-![Java](https://img.shields.io/badge/Java-21-007396?logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-6DB33F?logo=springboot&logoColor=white)
-![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-DB-F80000?logo=oracle&logoColor=white)
-
----
-
 ## 📌 목차
 - [프로젝트 소개](#-프로젝트-소개)
 - [핵심 가치](#-핵심-가치)
