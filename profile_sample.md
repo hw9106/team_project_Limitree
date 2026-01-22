@@ -206,6 +206,8 @@ Limitree (팀 프로젝트)
         v
 [Oracle DB]
 ```
+<img width="500" height="1024" alt="아키텍처" src="https://github.com/user-attachments/assets/33e6a9dc-e7e2-4a0d-8789-d9d1946135b4" />
+
 ---
 
 ## API 문서
