@@ -52,26 +52,48 @@
 2. physical.jpg
 <img width="1214" height="627" alt="limitree-physical" src="https://github.com/user-attachments/assets/54ee9cee-91f8-40e6-b4ad-eed218c80821" />
 
-### 📌 > React + Spring Boot 기반 쇼핑몰 프로젝트 — 기능을 **도메인(카테고리) 단위로 분리**
-![Java](https://img.shields.io/badge/Java-21-007396?logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-6DB33F?logo=springboot&logoColor=white)
-![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-DB-F80000?logo=oracle&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-18-339933?logo=node.js&logoColor=white)
-![Spring](https://img.shields.io/badge/Spring-6DB33F?logo=spring&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?logo=springsecurity&logoColor=white)
-![JPA](https://img.shields.io/badge/JPA-59666C?logo=hibernate&logoColor=white)
-![Hibernate](https://img.shields.io/badge/Hibernate-59666C?logo=hibernate&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
-![Redux](https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)
+## 🛠 Tech Stack
+
+### 🔹 Backend
+| 기술 | 버전/설명 | Badge |
+|---|---|---|
+| Java | 21 | ![Java](https://img.shields.io/badge/Java-21-007396?logo=java&logoColor=white) |
+| Spring | Framework | ![Spring](https://img.shields.io/badge/Spring-6DB33F?logo=spring&logoColor=white) |
+| Spring Boot | 3.4.4 | ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-6DB33F?logo=springboot&logoColor=white) |
+| Spring Security | 인증/인가 | ![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?logo=springsecurity&logoColor=white) |
+| JPA | ORM | ![JPA](https://img.shields.io/badge/JPA-59666C?logo=hibernate&logoColor=white) |
+| Hibernate | JPA 구현체 | ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?logo=hibernate&logoColor=white) |
+| Node.js | 18 | ![Node.js](https://img.shields.io/badge/Node.js-18-339933?logo=node.js&logoColor=white) |
+| Express | Node Framework | ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white) |
+
+---
+
+### 🔹 Frontend
+| 기술 | 버전/설명 | Badge |
+|---|---|---|
+| HTML5 | Markup | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) |
+| CSS3 | Style | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) |
+| JavaScript | ES6+ | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) |
+| TypeScript | Typed JS | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) |
+| React | 18 | ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white) |
+| Next.js | React Framework | ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white) |
+| Redux | 상태관리 | ![Redux](https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=white) |
+| Tailwind CSS | Utility CSS | ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white) |
+
+---
+
+### 🔹 Database
+| 기술 | 설명 | Badge |
+|---|---|---|
+| Oracle DB | RDBMS | ![Oracle](https://img.shields.io/badge/Oracle-DB-F80000?logo=oracle&logoColor=white) |
+
+---
+
+### 🔹 Version Control & Collaboration
+| 기술 | 설명 | Badge |
+|---|---|---|
+| Git | 형상관리 | ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white) |
+| GitHub | 협업 / 저장소 | ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white) |
 
 
 ---
