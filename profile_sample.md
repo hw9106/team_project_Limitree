@@ -201,6 +201,8 @@ Limitree (팀 프로젝트)
 - Swagger UI(OpenAPI): `springdoc-openapi-starter-webmvc-ui` 사용  
   > 실행 후 `/swagger-ui` 혹은 프로젝트 설정에 맞는 경로에서 확인
 
+<img width="500" height="1681" alt="스웨거" src="https://github.com/user-attachments/assets/1503233a-127a-4b71-a4bb-2dbbe934a212" />
+
 ---
 
 ## 실행 방법
