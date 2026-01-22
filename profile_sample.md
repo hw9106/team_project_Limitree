@@ -38,7 +38,7 @@ Limitree (팀 프로젝트)
 
 2. 화면 정의서 (Wireframe / 화면설계서)
 
-
+<img  height="100" alt="6번" src="https://github.com/user-attachments/assets/3b461c12-ed61-4291-a247-cd52ebbe2c13" /><img height="100" alt="7번" src="https://github.com/user-attachments/assets/3a064bc8-1611-4384-a825-ddcf1b7a9a5f" /><img height="100" alt="8번" src="https://github.com/user-attachments/assets/fe7bbaf3-6efe-4c63-85c1-9cb332dd2c95" />
 
 3. (UML) 유스케이스 다이어그램 - Usecase Diagram 
 
