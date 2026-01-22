@@ -148,7 +148,8 @@ team_project_Limitree/
   └─ frontend-su/         # React (UI/UX)
 ```
 ### 📌 데이터베이스 (ERD)
-![image](https://github.com/user-attachments/assets/f16d790a-460d-4aec-bc43-4fdf53e6b071)
+![limitree- erd](https://github.com/user-attachments/assets/eeabe48e-73d7-4300-a7bd-15c2864e1fd8)
+
 
 ---
 
