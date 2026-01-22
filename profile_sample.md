@@ -166,7 +166,8 @@ cd backend
 ### 2) Frontend (React)
 ```bash
 cd frontend
-npm install
+npm i --legacy-peer-deps
+npm i xlsx
 npm start
 ```
 ---
