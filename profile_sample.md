@@ -32,11 +32,17 @@
 
 ## 프로젝트 설계
 Limitree (팀 프로젝트)
-1. 요구사항 명세서 [01.요구사항명세서 .docx](https://github.com/user-attachments/files/24786048/01.docx)
-2. 화면 정의서 (Wireframe / 화면설계서) [02.사용자화면정의서.docx](https://github.com/user-attachments/files/24786049/02.docx)
-3. (UML) 유스케이스 다이어그램 - Usecase Diagram [03.유스케이스모형기술서.doc](https://github.com/user-attachments/files/24786050/03.doc)
-4. (UML) 시퀀스 다이어그램 - Sequence Diagram [04.씨퀀스다이어그람기술서.doc](https://github.com/user-attachments/files/24786051/04.doc)
-5. (UML) 클래스 다이어그램 - Class Diagram [05.클래스다이어그람기술서.doc](https://github.com/user-attachments/files/24786052/05.doc)
+1. 요구사항 명세서 
+<img width="836" height="175" alt="요구사항" src="https://github.com/user-attachments/assets/1bcbe91b-4f7c-4289-a2d5-1cafbd993c6b" />
+
+2. 화면 정의서 (Wireframe / 화면설계서)
+
+3. (UML) 유스케이스 다이어그램 - Usecase Diagram 
+
+4. (UML) 시퀀스 다이어그램 - Sequence Diagram 
+
+5. (UML) 클래스 다이어그램 - Class Diagram 
+
 6. ERD Diagram 
 
 ### 데이터베이스 (ERD Diagram) 
