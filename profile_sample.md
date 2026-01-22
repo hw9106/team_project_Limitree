@@ -120,19 +120,6 @@ Limitree (팀 프로젝트)
 ## CI/CD & Infra
 
 ### 🔹 CI/CD Pipeline (GitHub Actions)
-> **Push → Test → Build → Docker Image → Registry Push → Deploy**  
-> 변경사항이 GitHub에 Push 되면 Actions가 자동으로 실행되어 빌드/테스트 후 이미지 배포까지 자동화합니다.
-
-- **CI**
-  - Backend: Gradle Build & Test
-  - Frontend: Build (Next.js/React)
-  - Docker Image Build (서비스별 이미지 생성)
-  - Docker Registry로 Push
-- **CD**
-  - 운영 서버에서 최신 이미지 Pull
-  - Docker Compose로 컨테이너 재기동
-  - Nginx를 통해 Reverse Proxy로 서비스 제공
-  - Backend ↔ Oracle DB 연동
 
 | Category | Tech | Usage | Badge |
 |---|---|---|---|
