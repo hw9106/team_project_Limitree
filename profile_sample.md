@@ -63,11 +63,11 @@
 ---
 ## 🧾 프로젝트 설계
 
-1. 요구사항 명세서
-2. 화면 정의서 (Wireframe / 화면설계서) 
-3. (UML) 유스케이스 다이어그램 - Usecase Diagram
-4. (UML) 시퀀스 다이어그램 - Sequence Diagram
-5. (UML) 클래스 다이어그램 - Class Diagram
+1. 요구사항 명세서 [01.요구사항명세서 .docx](https://github.com/user-attachments/files/24786048/01.docx)
+2. 화면 정의서 (Wireframe / 화면설계서) [02.사용자화면정의서.docx](https://github.com/user-attachments/files/24786049/02.docx)
+3. (UML) 유스케이스 다이어그램 - Usecase Diagram [03.유스케이스모형기술서.doc](https://github.com/user-attachments/files/24786050/03.doc)
+4. (UML) 시퀀스 다이어그램 - Sequence Diagram [04.씨퀀스다이어그람기술서.doc](https://github.com/user-attachments/files/24786051/04.doc)
+5. (UML) 클래스 다이어그램 - Class Diagram [05.클래스다이어그람기술서.doc](https://github.com/user-attachments/files/24786052/05.doc)
 6. ERD Diagram
 
 ### 📌 데이터베이스 (ERD Diagram) 
@@ -75,11 +75,6 @@
 ![limitree-logical](https://github.com/user-attachments/assets/65939dbd-a96e-4a1b-bbff-80f5c5d8b685)
 2. physical.jpg
 <img width="1214" height="627" alt="limitree-physical" src="https://github.com/user-attachments/assets/54ee9cee-91f8-40e6-b4ad-eed218c80821" />
-
-
-
-
-
 ---
 ## 🎯 핵심 가치
 - **도메인 분리**: cart / category / compare / order / product / review / user / wishlist로 책임을 분리
