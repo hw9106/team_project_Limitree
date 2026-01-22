@@ -178,27 +178,38 @@ team_project_Limitree/
   └─ frontend/         # React (UI/UX)
 ```
 ---
-## 🚀 CI/CD Pipeline
+## Advanced CI/CD Pipeline
 
 ```mermaid
-flowchart LR
-    A[Developer<br/>Git Push] --> B[GitHub Repository]
+flowchart TB
+    Dev[Developer] --> Git[GitHub]
 
-    B --> C[GitHub Actions<br/>CI Pipeline]
+    Git --> CI[CI Pipeline<br/>GitHub Actions]
 
-    C --> D1[Backend Build<br/>Gradle / JUnit]
-    C --> D2[Frontend Build<br/>React / Next.js]
+    CI --> Test[Unit Test<br/>JUnit / Jest]
+    Test --> Build[Build<br/>Gradle / npm]
 
-    D1 --> E1[Docker Build<br/>Spring Boot Image]
-    D2 --> E2[Docker Build<br/>Frontend Image]
+    Build --> Image[Docker Image Build]
+    Image --> Scan[Security Scan]
 
-    E1 --> F[Docker Registry]
-    E2 --> F
+    Scan --> Registry[Docker Registry]
 
-    F --> G[Deploy Server<br/>Linux / Nginx]
+    Registry --> CD[CD Pipeline]
+    CD --> Deploy[Deploy<br/>Nginx / Docker Compose]
 
-    G --> H1[Backend Service<br/>Spring Boot]
-    G --> H2[Frontend Service<br/>React / Next.js]
+    Deploy --> Service[Application Service]
+    Service --> DB[(Oracle DB)]
 
-    H1 --> I[(Oracle DB)]
+### Pipeline Description
+1. 개발자가 기능 구현 후 GitHub에 Push
+2. GitHub Actions를 통해 CI 파이프라인 자동 실행
+3. Backend(Spring Boot)는 Gradle 기반 빌드 및 테스트 수행
+4. Frontend(React/Next.js)는 빌드 후 정적 리소스 생성
+5. 각 서비스별 Docker Image 생성
+6. Docker Registry로 이미지 Push
+7. 운영 서버에서 최신 이미지 Pull 후 배포
+8. Backend는 Oracle DB와 연동되어 서비스 제공
 
+본 프로젝트는 GitHub Actions 기반 CI/CD 파이프라인을 구축하여
+코드 변경 시 자동 빌드, 테스트, Docker 이미지 생성 및 배포가
+이루어지도록 구성하였습니다.
