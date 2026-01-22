@@ -16,7 +16,7 @@
 - [API 문서](#-api-문서)
 - [실행 방법](#-실행-방법)
 - [폴더 구조](#-폴더-구조)
-- [Advanced CI/CD Pipeline](#-Advanced-CI/CD-Pipeline)
+- [Advanced CI CD Pipeline](#advanced-ci-cd-pipeline)
 - [LIMITREE 시연](#-LIMITREE-시연)
 ---
 
@@ -230,7 +230,7 @@ team_project_Limitree/
   └─ frontend/         # React (UI/UX)
 ```
 ---
-## Advanced CI/CD Pipeline
+## Advanced CI CD Pipeline
 
 <img width="1536" height="1024" alt="PI" src="https://github.com/user-attachments/assets/04e8ff4d-a72a-4fae-8953-b6794c976824" />
 
