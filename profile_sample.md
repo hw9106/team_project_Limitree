@@ -196,3 +196,8 @@ team_project_Limitree/
 본 프로젝트는 GitHub Actions 기반 CI/CD 파이프라인을 구축하여
 코드 변경 시 자동 빌드, 테스트, Docker 이미지 생성 및 배포가
 이루어지도록 구성하였습니다.
+
+## LIMITREE 시연
+https://github.com/user-attachments/assets/a095d075-e0a3-43f2-9e69-42faf59850e7
+
+
