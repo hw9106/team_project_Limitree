@@ -129,38 +129,6 @@ Limitree (팀 프로젝트)
 
 ---
 
-## 🗂️ Architecture Overview (High-Level)
-
-- **Frontend(Next.js/React)**: 사용자 UI / 페이지 라우팅 / 상태관리
-- **Backend(Spring Boot)**: 비즈니스 로직 / 인증/인가 / API 제공
-- **Database(Oracle)**: 트랜잭션 기반 데이터 저장소
-- **Nginx**: Reverse Proxy로 요청 분기 및 정적 리소스 처리
-- **Docker Compose**: 서비스 단위 컨테이너 운영 및 배포 자동화
-
----
-
-## 📌 Quick Start (예시)
-
-> 아래는 예시입니다. 실제 프로젝트 실행 명령에 맞게 수정하세요.
-
-```bash
-# Frontend
-cd frontend
-npm install
-npm run dev
-
-# Backend
-cd backend
-./gradlew bootRun
-
-## 핵심 가치
-- **도메인 분리**: cart / category / compare / order / product / review / user / wishlist
-- **일관된 인증 체계**: Spring Security 기반 토큰 인증(프로젝트 내 JWTUtil 사용)으로 보호
-- **확장 가능한 구조**: Controller → Service → Repository 레이어 구조를 기반으로 기능 확장 용이
-- **협업 친화**: Swagger UI(OpenAPI)로 API 문서화
-
----
-
 ## 주요 기능
 ### 1) 상품(Product)
 - 상품 목록/상세 조회, 정렬/필터 UX 연동
