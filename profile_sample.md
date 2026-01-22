@@ -47,49 +47,130 @@ Limitree (팀 프로젝트)
 
 ## 기술 스펙
 
-### 🔹 Backend
-| 기술 | 버전/설명 | Badge |
-|---|---|---|
-| Java | 21 | ![Java](https://img.shields.io/badge/Java-21-007396?logo=java&logoColor=white) |
-| Spring | Framework | ![Spring](https://img.shields.io/badge/Spring-6DB33F?logo=spring&logoColor=white) |
-| Spring Boot | 3.4.4 | ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-6DB33F?logo=springboot&logoColor=white) |
-| Spring Security | 인증/인가 | ![Spring Security](https://img.shields.io/badge/Spring%20Security-6DB33F?logo=springsecurity&logoColor=white) |
-| JPA | ORM | ![JPA](https://img.shields.io/badge/JPA-59666C?logo=hibernate&logoColor=white) |
-| Hibernate | JPA 구현체 | ![Hibernate](https://img.shields.io/badge/Hibernate-59666C?logo=hibernate&logoColor=white) |
-| Node.js | 18 | ![Node.js](https://img.shields.io/badge/Node.js-18-339933?logo=node.js&logoColor=white) |
-| Express | Node Framework | ![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white) |
+# 🛒 Project Portfolio — (프로젝트명 넣기)
+
+> **Spring Boot + Next.js 기반의 커머스/서비스형 웹 프로젝트**  
+> GitHub Actions 기반 CI/CD로 빌드·테스트·도커 이미지 배포를 자동화하고, 운영 서버에서 최신 이미지를 Pull 받아 배포합니다.
 
 ---
 
-### 🔹 Frontend
-| 기술 | 버전/설명 | Badge |
-|---|---|---|
-| HTML5 | Markup | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white) |
-| CSS3 | Style | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white) |
-| JavaScript | ES6+ | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) |
-| TypeScript | Typed JS | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white) |
-| React | 18 | ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white) |
-| Next.js | React Framework | ![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white) |
-| Redux | 상태관리 | ![Redux](https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=white) |
-| Tailwind CSS | Utility CSS | ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white) |
+## ✨ Highlights
+
+- ✅ **Spring Security 기반 인증/인가** (JWT 기반 접근 제어, 보호 리소스 분리)
+- ✅ **JPA/Hibernate 기반 ORM 설계** (연관관계/트랜잭션/지연로딩 전략 적용)
+- ✅ **React/Next.js 기반 UI 구성** (컴포넌트 구조화, 상태관리, 반응형 UI)
+- ✅ **GitHub Actions CI/CD** (테스트 → 빌드 → Docker Image → Registry Push → 운영 배포)
+- ✅ **운영환경 배포** (Docker Compose + Nginx Reverse Proxy + Oracle 연동)
 
 ---
 
-### 🔹 Database
-| 기술 | 설명 | Badge |
-|---|---|---|
-| Oracle DB | RDBMS | ![Oracle](https://img.shields.io/badge/Oracle-DB-F80000?logo=oracle&logoColor=white) |
+## 🧩 Tech Stack
+
+### 🔹 Backend (API & Core Service)
+> **비즈니스 로직 / 인증·인가 / 데이터 접근 계층 중심**  
+> REST API 제공, Spring Security로 인증/인가 처리, JPA로 DB 연동을 담당합니다.
+
+| Category | Tech | Version / Usage | Badge |
+|---|---|---|---|
+| Language | Java | **Java 21 (LTS)** | ![Java](https://img.shields.io/badge/Java-21-007396?style=for-the-badge&logo=java&logoColor=white) |
+| Framework | Spring Framework | Core / DI / AOP | ![Spring](https://img.shields.io/badge/Spring-Framework-6DB33F?style=for-the-badge&logo=spring&logoColor=white) |
+| Framework | Spring Boot | **3.4.4** (API Server) | ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-6DB33F?style=for-the-badge&logo=springboot&logoColor=white) |
+| Security | Spring Security | 인증/인가, Filter 기반 보호 | ![Spring Security](https://img.shields.io/badge/Spring%20Security-Auth%2FAuthorization-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white) |
+| ORM | JPA | Entity 설계 / 연관관계 매핑 | ![JPA](https://img.shields.io/badge/JPA-ORM-59666C?style=for-the-badge&logo=hibernate&logoColor=white) |
+| ORM | Hibernate | JPA Provider / Lazy Loading | ![Hibernate](https://img.shields.io/badge/Hibernate-JPA%20Provider-59666C?style=for-the-badge&logo=hibernate&logoColor=white) |
+| Runtime | Node.js | **18** (서브 API/연동 서비스) | ![Node.js](https://img.shields.io/badge/Node.js-18-339933?style=for-the-badge&logo=node.js&logoColor=white) |
+| Framework | Express | 라우팅/미들웨어 기반 API | ![Express](https://img.shields.io/badge/Express-Node%20Framework-000000?style=for-the-badge&logo=express&logoColor=white) |
+
+---
+
+### 🔹 Frontend (Web UI)
+> **React/Next 기반 UI + 상태관리 + 반응형 스타일링**  
+> 화면 구성, 컴포넌트 구조화, 전역 상태 관리 및 UX 최적화를 담당합니다.
+
+| Category | Tech | Version / Usage | Badge |
+|---|---|---|---|
+| Markup | HTML5 | Semantic Markup | ![HTML5](https://img.shields.io/badge/HTML5-Markup-E34F26?style=for-the-badge&logo=html5&logoColor=white) |
+| Style | CSS3 | Layout / Responsive | ![CSS3](https://img.shields.io/badge/CSS3-Style-1572B6?style=for-the-badge&logo=css3&logoColor=white) |
+| Language | JavaScript | ES6+ | ![JavaScript](https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
+| Language | TypeScript | 타입 안정성 / DX 개선 | ![TypeScript](https://img.shields.io/badge/TypeScript-Typed%20JS-3178C6?style=for-the-badge&logo=typescript&logoColor=white) |
+| Library | React | **18** (SPA UI) | ![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white) |
+| Framework | Next.js | SSR/CSR, Routing | ![Next.js](https://img.shields.io/badge/Next.js-React%20Framework-000000?style=for-the-badge&logo=next.js&logoColor=white) |
+| State | Redux | 전역 상태관리 / Store | ![Redux](https://img.shields.io/badge/Redux-State%20Management-764ABC?style=for-the-badge&logo=redux&logoColor=white) |
+| CSS | Tailwind CSS | Utility CSS | ![Tailwind](https://img.shields.io/badge/Tailwind%20CSS-Utility%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) |
+
+---
+
+### 🔹 Database (Persistence)
+> **Oracle 기반 RDB 설계 & 트랜잭션 기반 데이터 운영**  
+> 무결성/정합성을 고려한 테이블 설계, 제약조건 및 관계 모델링을 적용합니다.
+
+| Category | Tech | Usage | Badge |
+|---|---|---|---|
+| RDBMS | Oracle DB | Schema / Relations / Transaction | ![Oracle](https://img.shields.io/badge/Oracle-Database-F80000?style=for-the-badge&logo=oracle&logoColor=white) |
 
 ---
 
 ### 🔹 Version Control & Collaboration
-| 기술 | 설명 | Badge |
-|---|---|---|
-| Git | 형상관리 | ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white) |
-| GitHub | 협업 / 저장소 | ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white) |
+> **Git 브랜치 전략 + GitHub PR 중심 협업 프로세스**  
+> 이슈 단위 작업 → PR → 리뷰 → 머지 흐름으로 품질을 관리합니다.
 
+| Category | Tech | Usage | Badge |
+|---|---|---|---|
+| VCS | Git | Branch / Merge / Tag | ![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?style=for-the-badge&logo=git&logoColor=white) |
+| Platform | GitHub | PR / Review / Issue | ![GitHub](https://img.shields.io/badge/GitHub-Collaboration-181717?style=for-the-badge&logo=github&logoColor=white) |
 
 ---
+
+## 🚀 CI/CD & Infra
+
+### 🔹 CI/CD Pipeline (GitHub Actions)
+> **Push → Test → Build → Docker Image → Registry Push → Deploy**  
+> 변경사항이 GitHub에 Push 되면 Actions가 자동으로 실행되어 빌드/테스트 후 이미지 배포까지 자동화합니다.
+
+- **CI**
+  - Backend: Gradle Build & Test
+  - Frontend: Build (Next.js/React)
+  - Docker Image Build (서비스별 이미지 생성)
+  - Docker Registry로 Push
+- **CD**
+  - 운영 서버에서 최신 이미지 Pull
+  - Docker Compose로 컨테이너 재기동
+  - Nginx를 통해 Reverse Proxy로 서비스 제공
+  - Backend ↔ Oracle DB 연동
+
+| Category | Tech | Usage | Badge |
+|---|---|---|---|
+| CI/CD | GitHub Actions | 자동 빌드/테스트/배포 | ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white) |
+| Container | Docker | 서비스별 이미지 패키징 | ![Docker](https://img.shields.io/badge/Docker-Container-2496ED?style=for-the-badge&logo=docker&logoColor=white) |
+| Orchestration | Docker Compose | 멀티 컨테이너 배포 | ![Docker Compose](https://img.shields.io/badge/Docker%20Compose-Orchestration-2496ED?style=for-the-badge&logo=docker&logoColor=white) |
+| Web Server | Nginx | Reverse Proxy / Routing | ![Nginx](https://img.shields.io/badge/Nginx-Reverse%20Proxy-009639?style=for-the-badge&logo=nginx&logoColor=white) |
+| Registry | Docker Registry | 이미지 저장/배포 | ![Docker](https://img.shields.io/badge/Docker%20Registry-Image%20Store-2496ED?style=for-the-badge&logo=docker&logoColor=white) |
+
+---
+
+## 🗂️ Architecture Overview (High-Level)
+
+- **Frontend(Next.js/React)**: 사용자 UI / 페이지 라우팅 / 상태관리
+- **Backend(Spring Boot)**: 비즈니스 로직 / 인증/인가 / API 제공
+- **Database(Oracle)**: 트랜잭션 기반 데이터 저장소
+- **Nginx**: Reverse Proxy로 요청 분기 및 정적 리소스 처리
+- **Docker Compose**: 서비스 단위 컨테이너 운영 및 배포 자동화
+
+---
+
+## 📌 Quick Start (예시)
+
+> 아래는 예시입니다. 실제 프로젝트 실행 명령에 맞게 수정하세요.
+
+```bash
+# Frontend
+cd frontend
+npm install
+npm run dev
+
+# Backend
+cd backend
+./gradlew bootRun
 
 ## 핵심 가치
 - **도메인 분리**: cart / category / compare / order / product / review / user / wishlist
