@@ -47,25 +47,6 @@ Limitree (팀 프로젝트)
 
 ## 기술 스펙
 
-# 🛒 Project Portfolio — (프로젝트명 넣기)
-
-> **Spring Boot + Next.js 기반의 커머스/서비스형 웹 프로젝트**  
-> GitHub Actions 기반 CI/CD로 빌드·테스트·도커 이미지 배포를 자동화하고, 운영 서버에서 최신 이미지를 Pull 받아 배포합니다.
-
----
-
-## ✨ Highlights
-
-- ✅ **Spring Security 기반 인증/인가** (JWT 기반 접근 제어, 보호 리소스 분리)
-- ✅ **JPA/Hibernate 기반 ORM 설계** (연관관계/트랜잭션/지연로딩 전략 적용)
-- ✅ **React/Next.js 기반 UI 구성** (컴포넌트 구조화, 상태관리, 반응형 UI)
-- ✅ **GitHub Actions CI/CD** (테스트 → 빌드 → Docker Image → Registry Push → 운영 배포)
-- ✅ **운영환경 배포** (Docker Compose + Nginx Reverse Proxy + Oracle 연동)
-
----
-
-## 🧩 Tech Stack
-
 ### 🔹 Backend (API & Core Service)
 > **비즈니스 로직 / 인증·인가 / 데이터 접근 계층 중심**  
 > REST API 제공, Spring Security로 인증/인가 처리, JPA로 DB 연동을 담당합니다.
