@@ -28,11 +28,18 @@
 **Limitree**는 쇼핑몰의 핵심 기능(상품/카테고리/장바구니/주문/리뷰/회원/위시리스트/비교)을 구현한 팀 프로젝트입니다.  
 프론트는 React 기반으로 UX를 구성하고, 백엔드는 Spring Boot REST API로 도메인별 책임을 분리했습니다.
 
-- Front-end: https://github.com/hw9106/team_project_Limitree/tree/master/frontend-su
-- Back-end: https://github.com/hw9106/team_project_Limitree/tree/master/backend-su
+---
+## 🧾 프로젝트 설계
+
+### 📌 데이터베이스 (ERD)
+![limitree- erd](https://github.com/user-attachments/assets/eeabe48e-73d7-4300-a7bd-15c2864e1fd8)
+
+### 📌 데이터베이스 (logical)
+![limitree-logical](https://github.com/user-attachments/assets/65939dbd-a96e-4a1b-bbff-80f5c5d8b685)
+
+
 
 ---
-
 ## 🎯 핵심 가치
 - **도메인 분리**: cart / category / compare / order / product / review / user / wishlist로 책임을 분리
 - **일관된 인증 체계**: Spring Security 기반 토큰 인증(프로젝트 내 JWTUtil 사용)으로 보호
@@ -149,13 +156,6 @@ team_project_Limitree/
 ```
 
 ---
-
-### 📌 데이터베이스 (ERD)
-![limitree- erd](https://github.com/user-attachments/assets/eeabe48e-73d7-4300-a7bd-15c2864e1fd8)
-
-### 📌 데이터베이스 (logical)
-![limitree-logical](https://github.com/user-attachments/assets/65939dbd-a96e-4a1b-bbff-80f5c5d8b685)
-
 
 ---
 
