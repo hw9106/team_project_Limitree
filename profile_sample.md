@@ -179,7 +179,8 @@ team_project_Limitree/
 ```
 ---
 ## Advanced CI/CD Pipeline
-![Uploading ChatGPT Image 2026년 1월 22일 오후 03_04_02.png…]()
+
+<img width="1536" height="1024" alt="PI" src="https://github.com/user-attachments/assets/04e8ff4d-a72a-4fae-8953-b6794c976824" />
 
 ### Pipeline Description
 1. 개발자가 기능 구현 후 GitHub에 Push
