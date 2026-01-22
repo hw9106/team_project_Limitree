@@ -33,15 +33,19 @@
 ## 프로젝트 설계
 Limitree (팀 프로젝트)
 1. 요구사항 명세서 
+
 <img width="500"  alt="요구사항" src="https://github.com/user-attachments/assets/1bcbe91b-4f7c-4289-a2d5-1cafbd993c6b" />
 
 2. 화면 정의서 (Wireframe / 화면설계서)
 
 3. (UML) 유스케이스 다이어그램 - Usecase Diagram 
+<img  height="100" alt="1번" src="https://github.com/user-attachments/assets/4358e56a-d3a1-467b-98e0-0862ddfee5b6" /><img height="100" alt="2번" src="https://github.com/user-attachments/assets/ba46b770-c89b-4570-8daa-c2428c2822bd" /><img height="100" alt="3번" src="https://github.com/user-attachments/assets/561dfdb0-2288-4ef5-8993-f04b84da5610" />
+
+
 
 4. (UML) 시퀀스 다이어그램 - Sequence Diagram 
 
-<img width="200" alt="1번" src="https://github.com/user-attachments/assets/b63210a6-daab-4688-b32f-c34f5f210cf3" /><img width="200"  alt="2번" src="https://github.com/user-attachments/assets/51c5a9df-0ae7-4a69-99a1-cf66d1ec2cad" /><img width="200"  alt="3번" src="https://github.com/user-attachments/assets/dddd6110-9d96-4dec-9c1e-842a6a7b33ca" />
+  <img width="200" alt="1번" src="https://github.com/user-attachments/assets/b63210a6-daab-4688-b32f-c34f5f210cf3" /><img width="200"  alt="2번" src="https://github.com/user-attachments/assets/51c5a9df-0ae7-4a69-99a1-cf66d1ec2cad" /><img width="200"  alt="3번" src="https://github.com/user-attachments/assets/dddd6110-9d96-4dec-9c1e-842a6a7b33ca" />
 
 5. (UML) 클래스 다이어그램 - Class Diagram 
 
