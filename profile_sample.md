@@ -4,7 +4,9 @@
 #### 💡팀명: LIMITREE
 #### 💡프로젝트명: 온라인 가구 쇼핑 플랫폼
 #### 💡팀원 소개: 손보연(팀장) 김선혁(부팀장) 장재혁(헬스남) 박성섭(섭섭이) 정유한(무한) 김연준(묵묵이) 박현우(따돌림)  
+
 ---
+
 > React + Spring Boot 기반 쇼핑몰 프로젝트 — 기능을 **도메인(카테고리) 단위로 분리**해 구현했습니다.
 
 ![Java](https://img.shields.io/badge/Java-21-007396?logo=java&logoColor=white)
@@ -34,25 +36,9 @@
 프론트는 React 기반으로 UX를 구성하고, 백엔드는 Spring Boot REST API로 도메인별 책임을 분리했습니다.
 
 ---
+
 ## 🧾 프로젝트 설계
-1. 유스케이스 다이어그람 🛍️ Limitree (팀 프로젝트)
-
-> React + Spring Boot 기반 쇼핑몰 프로젝트 — 기능을 **도메인(카테고리) 단위로 분리**해 구현했습니다.
-
-![Java](https://img.shields.io/badge/Java-21-007396?logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-6DB33F?logo=springboot&logoColor=white)
-![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-DB-F80000?logo=oracle&logoColor=white)
-
----
-
-## 🧾 프로젝트 소개
-**Limitree**는 쇼핑몰의 핵심 기능(상품/카테고리/장바구니/주문/리뷰/회원/위시리스트/비교)을 구현한 팀 프로젝트입니다.  
-프론트는 React 기반으로 UX를 구성하고, 백엔드는 Spring Boot REST API로 도메인별 책임을 분리했습니다.
-
----
-## 🧾 프로젝트 설계
-
+🛍️ Limitree (팀 프로젝트)
 1. 요구사항 명세서 [01.요구사항명세서 .docx](https://github.com/user-attachments/files/24786048/01.docx)
 2. 화면 정의서 (Wireframe / 화면설계서) [02.사용자화면정의서.docx](https://github.com/user-attachments/files/24786049/02.docx)
 3. (UML) 유스케이스 다이어그램 - Usecase Diagram [03.유스케이스모형기술서.doc](https://github.com/user-attachments/files/24786050/03.doc)
@@ -65,7 +51,14 @@
 ![limitree-logical](https://github.com/user-attachments/assets/65939dbd-a96e-4a1b-bbff-80f5c5d8b685)
 2. physical.jpg
 <img width="1214" height="627" alt="limitree-physical" src="https://github.com/user-attachments/assets/54ee9cee-91f8-40e6-b4ad-eed218c80821" />
+
+### 📌 > React + Spring Boot 기반 쇼핑몰 프로젝트 — 기능을 **도메인(카테고리) 단위로 분리**
+![Java](https://img.shields.io/badge/Java-21-007396?logo=java&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-6DB33F?logo=springboot&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-DB-F80000?logo=oracle&logoColor=white)
 ---
+
 ## 🎯 핵심 가치
 - **도메인 분리**: cart / category / compare / order / product / review / user / wishlist로 책임을 분리
 - **일관된 인증 체계**: Spring Security 기반 토큰 인증(프로젝트 내 JWTUtil 사용)으로 보호
