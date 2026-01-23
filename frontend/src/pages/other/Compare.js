@@ -140,10 +140,10 @@ const Compare = () => {
 
                               const finalProductPrice = (
                                 compareItem.price * currency.currencyRate
-                              ).toFixed(2);
+                              );
 
                               const finalDiscountedPrice = discountedPrice
-                                ? (discountedPrice * currency.currencyRate).toFixed(2)
+                                ? (discountedPrice * currency.currencyRate)
                                 : null;
 
                               return (

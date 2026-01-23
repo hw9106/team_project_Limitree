@@ -55,10 +55,10 @@ const Wishlist = () => {
                       {wishlistItems.map((item) => {
                         const discountedPrice = getDiscountPrice(item.price, item.discount);
 
-                        const finalPrice = (item.price * currency.currencyRate).toFixed(2);
+                        const finalPrice = (item.price * currency.currencyRate);
 
                         const finalDiscountedPrice = discountedPrice
-                          ? (discountedPrice * currency.currencyRate).toFixed(2)
+                          ? (discountedPrice * currency.currencyRate)
                           : null;
 
                         const cartItem = cartItems.find((cart) => cart.id === item.id);

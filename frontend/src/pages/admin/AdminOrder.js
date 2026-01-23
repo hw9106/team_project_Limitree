@@ -230,7 +230,7 @@ const AdminOrder = () => {
                 <div className="col-lg-12">
                   <div className="cart-shiping-update-wrapper">
                     <div className="cart-shiping-update">
-                      <Link to={process.env.PUBLIC_URL + "/admin-product"}>
+                      <Link to={process.env.PUBLIC_URL + "/admin/product"}>
                         상품 관리로 이동
                       </Link>
                     </div>
@@ -309,7 +309,7 @@ const AdminOrder = () => {
                         )}
                       </span>
                     </h4>
-                    <Link to={process.env.PUBLIC_URL + "/admin-product"}>
+                    <Link to={process.env.PUBLIC_URL + "/admin/product"}>
                       상품 관리
                     </Link>
                   </div>

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { Fragment, useContext, useEffect, useRef, useState } from "react";
+import { Fragment, useContext, useEffect, useRef, useState, useMemo } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import cogoToast from "cogo-toast";
@@ -10,10 +10,13 @@ import Breadcrumb from "../../wrappers/breadcrumb/Breadcrumb";
 import { getDiscountPrice } from "../../helpers/product";
 import { ShopGlobalCommonContext } from "../../App";
 
-// ✅ 추가: useOrders 훅
-import { useOrders } from "../../hooks/useOrders"; // ✅ 경로 확인!
-// ✅ 추가: 로그인 유저 (없으면 제거하고 userId 하드코딩)
-import { useUserContext } from "../../context/UserContext"; // ✅ 경로 확인!
+
+
+
+// ✅ useOrders 훅
+import { useOrders } from "../../hooks/useOrders";
+// ✅ 로그인 유저
+import { useUserContext } from "../../context/UserContext";
 
 const Checkout = () => {
   // 다음 주소 스크립트 로드
@@ -26,6 +29,7 @@ const Checkout = () => {
 
   const detailRef = useRef(null);
   const hasAutofilledRef = useRef(false);
+
   const handlePostcode = () => {
     if (!window.daum || !window.daum.Postcode) {
       cogoToast.error("주소 검색 로딩 중입니다. 잠시 후 다시 시도해주세요.");
@@ -49,10 +53,8 @@ const Checkout = () => {
           ...prev,
           zip: data.zonecode,
           streetAddress: fullAddress,
-          // addressLine2(상세주소)는 사용자가 입력하는 값이므로 여기서 덮어쓰지 않음
         }));
 
-        // ✅ 상세주소 입력칸으로 포커스 이동
         setTimeout(() => detailRef.current?.focus(), 0);
       },
     }).open();
@@ -63,25 +65,24 @@ const Checkout = () => {
   let cartTotalPrice = 0;
   let { pathname } = useLocation();
 
-  // ========================================
-  // Context에서 장바구니 관련 데이터만 가져오기 (구조 유지)
-  // ========================================
+  // ✅ cart 관련 context
   const { cartItems, currency, deleteAllFromCartHandler } = useContext(ShopGlobalCommonContext);
 
-  // ========================================
-  // 로그인 유저 ID (없으면 guard1로 테스트)
-  // ========================================
+  // ✅ 로그인 유저
   const { loginUser } = useUserContext();
-  const userId = loginUser?.userId || "guard1";
 
-  // ========================================
-  // ✅ orders/addOrder는 훅에서 가져오기
-  // ========================================
+  // ✅ 로그인 안됐으면 주문 못하게 (guard1 같은 임시값 쓰면 주문/조회 꼬임)
+  const userId = loginUser?.userId;
+
+  // ✅ 유저별 lastOrder key (OrderComplete/MyAccount와 동일 규칙)
+  const STORAGE_KEY = useMemo(() => {
+    return userId ? `lastOrder:${userId}` : "lastOrder:guest";
+  }, [userId]);
+
+  // ✅ orders/addOrder는 훅에서
   const { addOrder, lastBillingInfo } = useOrders(userId);
 
-  // ========================================
-  // 폼 입력 상태 관리
-  // ========================================
+  // ✅ 폼 상태
   const [billingInfo, setBillingInfo] = useState({
     firstName: "",
     lastName: "",
@@ -97,20 +98,19 @@ const Checkout = () => {
     orderNotes: "",
   });
 
-  // ✅ 기존 주문(마지막 주문) 배송지 자동 입력
-useEffect(() => {
-  if (!lastBillingInfo) return;
-  if (hasAutofilledRef.current) return; // ✅ 한번만
+  // ✅ 마지막 배송지 자동 입력
+  useEffect(() => {
+    if (!lastBillingInfo) return;
+    if (hasAutofilledRef.current) return;
 
-  setBillingInfo((prev) => ({
-    ...prev,
-    ...lastBillingInfo,
-  }));
+    setBillingInfo((prev) => ({
+      ...prev,
+      ...lastBillingInfo,
+    }));
 
-  hasAutofilledRef.current = true;
-}, [lastBillingInfo]);
+    hasAutofilledRef.current = true;
+  }, [lastBillingInfo]);
 
-  // 입력 값 변경 핸들러
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setBillingInfo((prev) => ({
@@ -119,16 +119,18 @@ useEffect(() => {
     }));
   };
 
-  // ========================================
-  // 폼 유효성 검사
-  // ========================================
   const validateForm = () => {
+    // ✅ 로그인 체크(중요)
+    if (!userId) {
+      cogoToast.error("로그인이 필요합니다", { position: "bottom-left" });
+      return false;
+    }
+
     const requiredFields = [
       { field: "firstName", label: "이름" },
       { field: "streetAddress", label: "주소" },
       { field: "zip", label: "우편번호" },
       { field: "phone", label: "전화번호" },
-      // 상세주소도 필수로 하고 싶으면 아래 추가:
       { field: "addressLine2", label: "상세주소" },
     ];
 
@@ -138,50 +140,51 @@ useEffect(() => {
         return false;
       }
     }
-
     return true;
   };
 
-  // ========================================
-  // 주문하기 버튼 핸들러
-  // ========================================
-const placeOrderHandler = async () => {
-  if (!cartItems || cartItems.length === 0) return;
+  // ✅ 주문하기
+  const placeOrderHandler = async () => {
+    if (!cartItems || cartItems.length === 0) return;
+    if (!validateForm()) return;
 
-  if (!validateForm()) return;
+    const detail = (billingInfo.addressLine2 || "").trim();
+    const mergedStreetAddress = detail
+      ? `${billingInfo.streetAddress} ${detail}`
+      : billingInfo.streetAddress;
 
-  // ✅ 상세주소 정리
-  const detail = (billingInfo.addressLine2 || "").trim();
+    const { addressLine2, ...restBillingInfo } = billingInfo;
 
-  // ✅ 기본주소 + 상세주소 합치기
-  const mergedStreetAddress = detail
-    ? `${billingInfo.streetAddress} ${detail}`
-    : billingInfo.streetAddress;
+    const orderData = {
+      cartItems,
+      currency,
+      billingInfo: {
+        ...restBillingInfo,
+        streetAddress: mergedStreetAddress,
+      },
+    };
 
-  // ✅ addressLine2 제거한 billingInfo 생성
-  const { addressLine2, ...restBillingInfo } = billingInfo;
+    console.log("주문 데이터:", orderData);
 
-  const orderData = {
-    cartItems: cartItems,
-    currency: currency,
-    billingInfo: {
-      ...restBillingInfo,
-      streetAddress: mergedStreetAddress, // 합쳐진 주소만 전송
-    },
-  };
+    const createdOrder = await addOrder(orderData);
 
-  console.log("주문 데이터:", orderData);
+    if (createdOrder) {
+      // ✅ 1) 첫주문 완료페이지가 뜨게: storage에 저장
+      try {
+        sessionStorage.setItem(STORAGE_KEY, JSON.stringify(createdOrder));
+      } catch (e) {
+        console.warn("lastOrder 저장 실패:", e);
+      }
 
-  const createdOrder = await addOrder(orderData);
+      // ✅ 2) state로도 넘기기(가장 확실)
+      await deleteAllFromCartHandler();
+      navigate(process.env.PUBLIC_URL + "/order-complete", { state: createdOrder });
+      return;
+    }
 
-  if (createdOrder) {
-    await deleteAllFromCartHandler();
-    navigate(process.env.PUBLIC_URL + "/order-complete");
-  } else {
     console.error("주문 생성 실패");
-  }
-};
-
+    cogoToast.error("주문 생성 실패", { position: "bottom-left" });
+  };
 
   return (
     <Fragment>
@@ -245,7 +248,6 @@ const placeOrderHandler = async () => {
                             onClick={handlePostcode}
                             required
                           />
-
                           <input
                             ref={detailRef}
                             placeholder={t("checkout.address_line_2")}
@@ -305,10 +307,9 @@ const placeOrderHandler = async () => {
                             {cartItems.map((cartItem) => {
                               const discountedPrice = getDiscountPrice(cartItem.price, cartItem.discount);
 
-                              const finalProductPrice = (cartItem.price * currency.currencyRate);
-
+                              const finalProductPrice = cartItem.price * currency.currencyRate;
                               const finalDiscountedPrice = discountedPrice
-                                ? (discountedPrice * currency.currencyRate)
+                                ? discountedPrice * currency.currencyRate
                                 : null;
 
                               discountedPrice
@@ -322,10 +323,8 @@ const placeOrderHandler = async () => {
                                   </span>
                                   <span className="order-price">
                                     {discountedPrice
-                                      ? currency.currencySymbol +
-                                        (finalDiscountedPrice * cartItem.quantity)
-                                      : currency.currencySymbol +
-                                        (finalProductPrice * cartItem.quantity)}
+                                      ? currency.currencySymbol + finalDiscountedPrice * cartItem.quantity
+                                      : currency.currencySymbol + finalProductPrice * cartItem.quantity}
                                   </span>
                                 </li>
                               );
@@ -349,7 +348,7 @@ const placeOrderHandler = async () => {
                       </div>
                     </div>
 
-                    <div className="payment-method">
+                    <div className="payment-method" >
                       <div className="place-order mt-25">
                         <button className="btn-hover" type="button" onClick={placeOrderHandler}>
                           {t("checkout.place_order")}
@@ -357,8 +356,6 @@ const placeOrderHandler = async () => {
                       </div>
                     </div>
 
-                    {/* 디버그용: orders 확인하고 싶으면 잠깐 써도 됨 */}
-                    {/* <pre>{JSON.stringify(orders, null, 2)}</pre> */}
                   </div>
                 </div>
               </div>
@@ -366,7 +363,9 @@ const placeOrderHandler = async () => {
               <div className="row">
                 <div className="col-lg-12 text-center">
                   <h3>{t("checkout.empty_cart")}</h3>
-                  <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>{t("checkout.shop_now")}</Link>
+                  <Link to={process.env.PUBLIC_URL + "/shop-grid-standard"}>
+                    {t("checkout.shop_now")}
+                  </Link>
                 </div>
               </div>
             )}
